@@ -21,7 +21,7 @@ jobs:
       - name: Build image
         run: docker build -t registry.digitalocean.com/test-cont/digital-ocean-deploy:$(echo $GITHUB_SHA | head -c7) .
       
-      - name: Instal doctl
+      - name: Install doctl
         uses: digitalocean/action-doctl@v2
         with:
           token: ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }}
