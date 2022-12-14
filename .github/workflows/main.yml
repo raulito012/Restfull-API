@@ -24,7 +24,7 @@ jobs:
       - name: Instal doctl
         uses: digitalocean/action-doctl@v2
         with:
-          token: ${{ secrets.DO_API_PRIVATE_KEY }}
+          token: ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }}
 
       - name: Login docker
         run: doctl registry login --expiry-seconds 600
