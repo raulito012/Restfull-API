@@ -24,7 +24,7 @@ jobs:
       - name: Instal doctl
         uses: digitalocean/action-doctl@v2
         with:
-          token: ${{ secrets.DIGITALOCEAN_TOKEN }}
+          token: ${{ dop_v1_0ae7e75c797b4268935df7707395115ac44daf5b864d820e62ec28e5057cc9c7 }}
 
       - name: Login docker
         run: doctl registry login --expiry-seconds 600
